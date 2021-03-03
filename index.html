@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login form</title>
+  <link rel="stylesheet" href="login_style.css">
+</head>
+<body>
+  <div id="head">
+    <span onclick="login()">Login</span>
+    <span onclick="ragister()">Ragister</span>
+     <hr id="Line">
+      <form id="LoginForm">
+        <input type=" text" placeholder="Username*" required>
+        <input type="password" placeholder="Password*" required>
+        <button>Submit</button>
+        <p>Required fields are followed by *</p>
+      </form>
+      <form id="RagisterForm">
+        <input type=" text" placeholder="Username*" required>
+        <input type="email" name="" id="" placeholder="Email_ID">
+        <input type="password" placeholder="Password*" required>
+        <button>Submit</button>
+        <p>Required fields are followed by *</p>
+      </form>
+      </div>
+      <script>
+        var LoginForm=document.getElementById("LoginForm")
+        var RagisterForm=document.getElementById("RagisterForm")
+        var Line=document.getElementById("Line")
+        function login()
+       {
+        RagisterForm.style.transform="translateX(0px)";
+         LoginForm.style.transform="translateX(0px)";
+         Line.style.transform="translateX(0px)";
+       }
+       function ragister()
+       {
+        RagisterForm.style.transform="translateX(300px)";
+         LoginForm.style.transform="translateX(320px)";
+         Line.style.transform="translateX(141px)";
+       }
+         </script>
+</body>
+</html>
